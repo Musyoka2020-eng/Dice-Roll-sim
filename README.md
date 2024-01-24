@@ -26,7 +26,7 @@ A simple web-based Dice Roll Simulator with a rolling animation and a history of
 2. Open the project folder:
 
     ```bash
-    cd dice-roll-simulator
+    cd dice-roll-sim
     ```
 
 3. Open the `index.html` file in your web browser.
