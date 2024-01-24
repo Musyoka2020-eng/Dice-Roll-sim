@@ -1,3 +1,17 @@
+/**
+ * Stylesheet for the dice roll simulator webpage. 
+ * 
+ * Sets up overall page layout, fonts, colors, animations and interactions.
+ * Includes styles for:
+ * - Page body 
+ * - Headings 
+ * - Dice elements
+ * - Dice roll animation
+ * - Button 
+ * - Unordered list 
+ * - List items
+*/
+
 body {
     font-family: "Open Sans", sans-serif;
     text-align: center;
@@ -14,7 +28,7 @@ h1 {
     margin: 5px;
     animation-duration: 1s;
     animation-fill-mode: forwards;
-    color:midnightblue;
+    color: midnightblue;
 }
 
 .roll-animation {
@@ -25,6 +39,7 @@ h1 {
     0% {
         transform: rotateY(0deg) rotateX(0deg);
     }
+
     100% {
         transform: rotateY(720deg) rotateX(720deg);
     }

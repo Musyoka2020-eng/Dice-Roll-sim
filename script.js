@@ -4,6 +4,12 @@ const historyEl = document.getElementById('roll-history');
 
 let historyList = [];
 
+/**
+ * Rolls a dice by generating a random number between 1 and 6, 
+ * converts that to a dice face string, updates the DOM to 
+ * display it, pushes the result to history, and updates the
+ * roll history UI.
+ */
 function rollDice() {
     const rollResult = Math.floor(Math.random() * 6) + 1;
     const diceFace = getDiceFace(rollResult);
@@ -12,6 +18,10 @@ function rollDice() {
     updateRollHistory();
 }
 
+/**
+ * Updates the roll history UI by clearing it and re-rendering 
+ * the roll results in reverse chronological order.
+ */
 function updateRollHistory() {
     historyEl.innerHTML = ""; // Clear the existing content
     historyList.slice().reverse().forEach((rollResult, index) => {
@@ -24,6 +34,9 @@ function updateRollHistory() {
 
 
 
+/**
+ * Converts a dice roll result number to the corresponding emoji.
+ */
 function getDiceFace(rollResult) {
     switch (rollResult) {
         case 1:
